@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata&family=Space+Mono&display=swap');
 
 body {
-    background-color: rgb(100, 95, 95);
+    background-color: rgb(97, 119, 108);
+    /* background-color: rgb(100, 95, 95); */
     color: antiquewhite;
     font-size: 16px;
     font-weight: normal;
@@ -24,17 +25,43 @@ a:hover {
 
 .header {
     display: flex;
-    padding-left: 30;
-    margin-top: 20;
+    /* padding-left: 30px; */
+    margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.header img:hover {
-    transform: scale(1.2);
 }
 
 .about {
     margin-left: 30px;
+}
+
+.name {
+    width: 16ch;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid antiquewhite;
+    animation: cursor 0.75s step-end infinite,
+    printed_text 2s steps(15);
+}
+
+@media (max-width: 700px) {
+    .header {
+        text-align: center;
+        display: block;
+    }
+    .about {
+        margin-right: 30px;
+    }
+    .name {
+        margin-left: 150px;
+    }
+}
+
+.header img:hover {
+    transform: scale(1.2);
 }
 
 @keyframes cursor {
@@ -57,19 +84,6 @@ a:hover {
     }
 }
 
-.name {
-    width: 15ch;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 30px;
-    /* font-family: monospace; */
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid antiquewhite;
-    animation: cursor 0.75s step-end infinite,
-    printed_text 2s steps(15);
-}
 
 .header p {
     font-style: italic;
