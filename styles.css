@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata&family=Space+Mono&display=swap');
+
+body {
+    background-color: rgb(100, 95, 95);
+    color: antiquewhite;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Space Mono', monospace; */
+}
+
+a {
+    color: antiquewhite;
+}
+
+a:hover {
+    color: rgb(49, 41, 41);
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    padding-left: 30;
+    margin-top: 20;
+    margin-bottom: 20px;
+}
+
+.header img:hover {
+    transform: scale(1.2);
+}
+
+.about {
+    margin-left: 30px;
+}
+
+@keyframes cursor {
+    0%{
+        border-color: antiquewhite;
+    }
+
+    50%{
+        border-color: transparent;
+    }
+
+    100%{
+        border-color: antiquewhite;
+    }
+}
+
+@keyframes printed_text {
+    from{
+        width: 0;
+    }
+}
+
+.name {
+    width: 15ch;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    /* font-family: monospace; */
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid antiquewhite;
+    animation: cursor 0.75s step-end infinite,
+    printed_text 2s steps(15);
+}
+
+.header p {
+    font-style: italic;
+    margin: 6;
+}
+
+.info {
+    padding: 10px;
+    border-radius: 30px;
+    border-style: dotted;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.50);
+}
+
+h1 {
+    color: antiquewhite;
+}
+
+h3 {
+    margin-left: 5;
+}
+
+.tableEducation {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.tableEducation th {
+    text-align: center;
+}
+
+.tableEducation td {
+    padding-left: 35px;
+}
+
+.contacts p {
+    margin-left: 20;
+}
