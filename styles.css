@@ -106,7 +106,9 @@ h1 {
 }
 
 h2 {
-    margin-left: 5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 .tableEducation {
@@ -122,6 +124,12 @@ h2 {
     padding-left: 35px;
 }
 
-.contacts p {
-    margin-left: 20;
+.contacts span {
+    /* margin-left: 20px; */
+    margin: 20px;
+    /* padding: 5px 5px; */
 }
+
+/* .contacts a {
+    padding: 5px 5px;
+} */
