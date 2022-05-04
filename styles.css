@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Inconsolata&family=Space+Mono&display=swap');
 
 body {
-    background-color: rgb(97, 119, 108);
-    /* background-color: rgb(100, 95, 95); */
+    background-color: #61776c;
     color: antiquewhite;
     font-size: 16px;
     font-weight: normal;
@@ -15,7 +14,7 @@ a {
 }
 
 a:hover {
-    color: rgb(49, 41, 41);
+    color: #312929;
 }
 
 .container {
@@ -34,7 +33,7 @@ a:hover {
     margin-left: 30px;
 }
 
-.name {
+/* .name {
     width: 16ch;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -44,8 +43,8 @@ a:hover {
     overflow: hidden;
     border-right: 3px solid antiquewhite;
     animation: cursor 0.75s step-end infinite,
-    printed_text 2s steps(15);
-}
+    printed_text 2s steps(16);
+} */
 
 @media (max-width: 700px) {
     .header {
@@ -55,9 +54,9 @@ a:hover {
     .about {
         margin-right: 30px;
     }
-    .name {
+    /* .name {
         margin-left: 150px;
-    }
+    } */
 }
 
 .header img:hover {
@@ -106,7 +105,7 @@ h1 {
     color: antiquewhite;
 }
 
-h3 {
+h2 {
     margin-left: 5;
 }
 
